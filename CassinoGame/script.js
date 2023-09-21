@@ -4,13 +4,39 @@ const dice1 = document.getElementById("dice1");
 const dice2 = document.getElementById("dice2");
 const result = document.getElementById("result");
 const roll = document.getElementById("roll");
-
+var point = 0;
+var previousPoint = 0;
 function rollingDice(){
     return (Math.floor(Math.random() * 6) )+1;
 }
 
+function zero(){
+    point = 0;
+    previousPoint = 0;
+}
+
 function play(value1,value2){
-    result.innerHTML = value1+value2==11 || value1+value2==7?`You won!`:`You lose!`;
+        var currentPoint = value1+value2;
+        previousPoint = point;
+        point = currentPoint;
+      if(previousPoint == 0 && (point==11 || point ==7)){
+        result.innerHTML= `You Win`;
+        zero();
+        return;
+      }
+      if(previousPoint!= point && (point!=11&&point!=7)){
+        result.innerHTML = `Your current points are ${currentPoint}`;
+        return;
+      }
+    if(previousPoint!=point && point == 7){
+        result.innerHTML= `You Lose`; 
+       zero();
+        return;
+    }if(previousPoint!=0&&(point==previousPoint||point ==11)){
+        result.innerHTML= `You Win`;
+        zero();
+        return;
+    }
 }
 
 
