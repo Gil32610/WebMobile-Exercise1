@@ -1,0 +1,20 @@
+
+.grid{
+    background-color: red;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px;
+}
+.grid2{
+    background-color: green;
+    width: 700px;
+    padding: 25px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
