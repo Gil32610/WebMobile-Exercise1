@@ -1,8 +1,10 @@
 
-div{
-    background-color: #e7edaf;
+div.elfsight-app-17a4446f-264c-465f-a800-d9f8add05a7a{
+    background-color: white;
     border-style: solid;
-    border-width: 2px;
+    border-width: 0px;
+    width: 50%;
+    margin: auto;
 }
 label{
     text-align: center;
@@ -17,13 +19,75 @@ div.hino{
     border: 2px solid;
     width: 300px;
 }
+.hino img{
+    width: 100px;
+   display: block;
+   margin: auto;
+}
 div.quote{
     text-align: center;
     background-color: white;
-    width: 50%;
+    width: 20%;
     margin: auto;
+    margin-top: 80px;
     border: 0px;
 }
-footer p{
-
+body {
+    margin: 0px;
 }
+ 
+.patterns {
+    width: 100vw;
+    height: 100vw;
+}
+ 
+.pt1 {
+    background-size: 50px 50px;
+    background-color: #0ae;
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+    background-image: -moz-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+    background-image: -ms-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+    background-image: -o-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+    background-image: linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+}
+.listas{
+    background-color: white;
+    width: 1300px;
+}
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+.dropdown-options {
+    display: none;
+    position: absolute;
+    overflow: auto;
+  }
+  .dropdown:hover .dropdown-options {
+    display: block;
+  }
+  button{
+    border:none;
+    border-radius:5px;
+    padding:20px 35px;
+    font-size:15px;
+    cursor:pointer;
+  }
+  
+  button:hover{
+    background-color:#ddd;
+  }
+  .dropdown-options a {
+    display: block;
+    color: #000000;
+    background-color: white;
+    padding: 5px;
+    text-decoration: none;
+    padding:20px 40px;
+    width: 65px;
+  }
+  .dropdown-options a:hover {
+    color: #0a0c23;
+    background-color: #ddd;
+    border-radius:5px;
+  }
