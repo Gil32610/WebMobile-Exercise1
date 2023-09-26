@@ -2,8 +2,10 @@ const btAnterior = document.getElementById("btAnterior");
 const btProxima = document.getElementById("btProxima");
 const lista = document.getElementById("listaPessoas");
 
-const exibirLista = (lista) => {
+const exibirLista = (lista, numeroDaPagina) => {
     listaPessoas.innerHTML = "";
+    const currentPageOrder = (numeroDaPagina*10)-10 +1;
+    listaPessoas.setAttribute("start",currentPageOrder);
     for (let i = 0; i < lista.length; ++i) {
       const li = document.createElement("li");
       const text = document.createTextNode(
