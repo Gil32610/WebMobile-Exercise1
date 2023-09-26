@@ -40,6 +40,18 @@ const exibirLista = (lista) => {
         configurarBotoes(data);
       });
   };
+
+  function extrairNumeroDaPagina(url) {
+    let page = url.toString();
+    const splitted = page.split("=");
+    if(splitted.length===2){
+      const numeroDaPagina = parseInt(splitted[1]);
+      if(!isNaN(numeroDaPagina))return numeroDaPagina;
+    }
+    return null;
+  }
+
+
   
   fetchAPI("https://swapi.dev/api/people/?page=1");
 
