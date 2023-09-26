@@ -1,6 +1,6 @@
 const btAnterior = document.getElementById("btAnterior");
 const btProxima = document.getElementById("btProxima");
-const lista = document.getElementById("listaPessoas");
+const listaPessoas = document.getElementById("listaPessoas");
 
 const exibirLista = (lista, numeroDaPagina) => {
     listaPessoas.innerHTML = "";
