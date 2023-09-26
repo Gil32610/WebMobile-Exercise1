@@ -36,7 +36,8 @@ const exibirLista = (lista) => {
         return response.json();
       })
       .then((data) => {
-        exibirLista(data.results);
+        const numeroDaPagina =extrairNumeroDaPagina(url);
+        exibirLista(data.results,numeroDaPagina);
         configurarBotoes(data);
       });
   };
