@@ -32,13 +32,14 @@ const exibirLista = (lista, numeroDaPagina) => {
     };
   };
   
-  const fetchAPI = (url) => {
+  const fetchAPI = (url) => { 
     fetch(url)
       .then((response) => {
         return response.json();
       })
       .then((data) => {
         const numeroDaPagina =extrairNumeroDaPagina(url);
+        console.log(data);
         exibirLista(data.results,numeroDaPagina);
         configurarBotoes(data);
       });
