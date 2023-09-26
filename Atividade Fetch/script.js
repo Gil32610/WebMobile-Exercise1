@@ -10,7 +10,7 @@ const exibirLista = (lista, numeroDaPagina) => {
       const li = document.createElement("li");
       const text = document.createTextNode(
         `${lista[i].name} (${lista[i].birth_year}) (${lista[i].height} cm)`
-      );
+      ); 
       li.appendChild(text);
       listaPessoas.appendChild(li);
     }
