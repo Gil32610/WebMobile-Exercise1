@@ -52,7 +52,7 @@ body {
 }
 .listas{
     background-color: white;
-    width: 1300px;
+    width: fit-content;
 }
 .dropdown{
     display: inline-block;

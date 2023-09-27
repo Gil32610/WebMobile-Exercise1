@@ -1,11 +1,21 @@
 img{
-    width: autopx;
-    height: 150px;
+    width: 140px;
+    height: 120px;
 }
-div{
+.products {
+    width: fit-content;
+    flex-direction: row;
+}
+.products div{
+    display: inline-block;
+    
     background-color: green;
-    padding: 150px;
-    width: auto;
-    height: auto;
-    display: inline;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 100px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
